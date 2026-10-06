@@ -1,0 +1,9 @@
+{
+  "name": "trabalho-de-front",
+  "version": "1.0.0",
+  "description": "Atividade GraphQL Frontend",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}

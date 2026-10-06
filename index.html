@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta GraphQL - Alunos, Cursos e Professores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Painel de Consultas GraphQL</h1>
+    
+    <div class="actions">
+      <button id="btn-alunos" onclick="carregarAlunos()">Carregar Alunos</button>
+      <button id="btn-cursos" onclick="carregarCursos()">Carregar Cursos</button>
+      <button id="btn-professores" onclick="carregarProfessores()">Carregar Professores</button>
+      <button id="btn-todos" onclick="carregarTodos()">Carregar Todos</button>
+    </div>
+
+    <!-- Status / Feedback -->
+    <div id="status" class="status-msg"></div>
+
+    <div class="grid">
+      <!-- Seção Alunos -->
+      <section class="card">
+        <h2>👨‍🎓 Alunos</h2>
+        <ul id="lista-alunos"><li>Nenhum dado carregado.</li></ul>
+      </section>
+
+      <!-- Seção Cursos -->
+      <section class="card">
+        <h2>📚 Cursos</h2>
+        <ul id="lista-cursos"><li>Nenhum dado carregado.</li></ul>
+      </section>
+
+      <!-- Seção Professores -->
+      <section class="card">
+        <h2>👨‍🏫 Professores</h2>
+        <ul id="lista-professores"><li>Nenhum dado carregado.</li></ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
